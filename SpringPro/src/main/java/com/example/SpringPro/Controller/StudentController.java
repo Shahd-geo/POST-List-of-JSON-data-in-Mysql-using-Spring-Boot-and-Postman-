@@ -1,4 +1,4 @@
-package com.example.SpringPro.Contolar;
+package com.example.SpringPro.Controller;
 
 import com.example.SpringPro.Entity.Student;
 import com.example.SpringPro.Service.StudentService;
@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 
-public class StudentContlor {
+public class StudentController {
     @Autowired
     private StudentService  studentService;
 
@@ -39,6 +39,13 @@ public class StudentContlor {
     public String findStudent(@PathVariable int id) {
         return "Student found with id = " + id;
     }
-
+    //ALL Above Self Practice Here is Solving Task 28 (Update)
+    @PutMapping("/updateStudent")
+    public String updateStudent(@RequestParam String name) {
+        Student student = new Student(101, "A", "Ahmad");
+        String oldName = student.getName();
+        student.setName(name);
+        return "Student name updated successfully.\n" + "Previous Name: " + oldName + "\n" + "New Name: " + student.getName();
+    }
 
 }
