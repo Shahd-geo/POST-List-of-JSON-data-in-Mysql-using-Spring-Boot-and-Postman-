@@ -25,6 +25,18 @@ public class UpdateDemo {
 
         System.out.println("Update Status: " + updateStatus);
     }
-
-
+    public static void updateStudentNameTask27() {
+        Student student = new Student(101,"A", "Ahmad");
+        System.out.println("Before Update");
+        System.out.println("ID: " + student.getId());
+        System.out.println("Name: " + student.getName());
+        System.out.println("Grade: " + student.getGrade());
+        student.setName("Ali");
+        System.out.println("\nAfter Update");
+        System.out.println("ID: " + student.getId());
+        System.out.println("Name: " + student.getName());
+        System.out.println("Grade: " + student.getGrade());
+    }
 }
+
+
