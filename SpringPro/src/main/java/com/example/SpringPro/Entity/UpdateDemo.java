@@ -5,6 +5,7 @@ public class UpdateDemo {
         String currentStudentName = "Ahmed";
         String newStudentName = "Ali";
         boolean updateStatus;
+        System.out.println("=== Task 26 ===");
         System.out.println("Current Student Name: " + currentStudentName);
 
         if (!currentStudentName.equals(newStudentName)) {
@@ -26,6 +27,7 @@ public class UpdateDemo {
         System.out.println("Update Status: " + updateStatus);
     }
     public static void updateStudentNameTask27() {
+        System.out.println("=== Task 27 ===");
         Student student = new Student(101,"A", "Ahmad");
         System.out.println("Before Update");
         System.out.println("ID: " + student.getId());
