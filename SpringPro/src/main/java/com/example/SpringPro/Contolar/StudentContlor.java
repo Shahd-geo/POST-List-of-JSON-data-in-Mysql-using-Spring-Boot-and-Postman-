@@ -15,6 +15,7 @@ public class StudentContlor {
 
     @PostMapping("/addStudent")
     public Student postDetails(@RequestBody Student student) {
+        return studentService.addStudent(student);
 
     }
 
