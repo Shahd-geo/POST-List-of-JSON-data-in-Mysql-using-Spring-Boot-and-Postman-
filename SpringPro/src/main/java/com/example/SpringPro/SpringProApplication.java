@@ -1,5 +1,6 @@
 package com.example.SpringPro;
 
+import com.example.SpringPro.Entity.UpdateDemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,7 @@ public class SpringProApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringProApplication.class, args);
+		UpdateDemo.updateStudentName();
 	}
 
 }
