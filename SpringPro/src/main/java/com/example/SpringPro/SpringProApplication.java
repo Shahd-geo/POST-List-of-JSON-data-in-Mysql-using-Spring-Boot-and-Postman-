@@ -10,6 +10,7 @@ public class SpringProApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringProApplication.class, args);
 		UpdateDemo.updateStudentName();
+		UpdateDemo.updateStudentNameTask27();
 	}
 
 }
